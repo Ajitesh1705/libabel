@@ -3,6 +3,12 @@ let yoff = 10;
 let xoff = 10;
 var seed = 1;
 
+let title, drag;
+function preload() {
+  title = loadImage("images/Sign.svg");
+  drag = loadImage("images/Drag.svg");
+}
+
 function randomx() {
   var x = Math.sin(seed++) * 10000;
   return x - Math.floor(x);
@@ -32,6 +38,8 @@ function draw() {
       rect(x, y, rwidth, rwidth);
     }
   }
+  image(title, 200 - nxoff, 200 - nyoff, 720, 90);
+  image(drag, 200 - nxoff, 320 - nyoff, 100, 20);
 }
 
 function normalr(input) {
