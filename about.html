@@ -30,41 +30,15 @@
 
     <link rel="icon" type="image/svg+xml" href="images/Icon.svg" />
 
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
-    <script src="main.js"></script>
-
     <style>
       body {
+        margin: 20;
+      }
+
+      h1 {
         margin: 0;
-      }
-
-      .title {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        -webkit-box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.39);
-        box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.39);
-        background-color: #000;
-      }
-
-      .about {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: #000;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 2px;
-        padding-bottom: 5px;
-      }
-
-      p {
-        margin: 0;
-        color: #fff;
+        margin-bottom: 5px;
+        color: #000;
         font-family: monospace;
         font-weight: 700;
         font-size: 20px;
@@ -72,26 +46,50 @@
 
       a {
         margin: 0;
-        color: rgb(224, 224, 224);
+        color: rgb(120, 120, 120);
         font-family: monospace;
         font-weight: 400;
         font-size: 15px;
       }
 
-      main {
-        cursor: move; /* fallback if grab cursor is unsupported */
-        cursor: grab;
-        cursor: -moz-grab;
-        cursor: -webkit-grab;
+      p {
+        margin: 0;
+        margin-top: 5px;
+        color: #000;
+        font-family: monospace;
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+      .ps {
+        margin-top: 10px;
+        color: rgb(120, 120, 120);
       }
     </style>
   </head>
   <body>
-    <div class="title">
-      <p>The Canvas of Babel</p>
-    </div>
-    <div class="about">
-      <a href="/about.html">read more</a>
-    </div>
+    <h1>The Canvas of Babel</h1>
+    <p>An infinite array of every possible arrangement of pixels.</p>
+    <p>Contained images: the moment of your death, every frame of Shrek 2, the inside of a black hole, your bank password...</p>
+    <hr />
+    <p>
+      A project built in 3 hours by @willdepue and @avischiffman.
+      <a href="https://twitter.com/AviSchiffmann/status/1562679258249854976?s=20&t=_mwbj2iTs-4YZK1zjlK21Q">Here's the Twitter thread where it all started.</a>
+    </p>
+
+    <p class="ps">
+      PS: I might get to building a search feature so you can find the location where a certain image can be found but then again I only put about 2 hours into
+      this so not super invested in improving it yet - Will <br />
+      Also pretty sure that my PRNG (random number generator) is broken and I'm not using it correctly.
+    </p>
+    <hr />
+
+    <p>
+      Appreciate you giving me a <a href="https://twitter.com/willdepue">follow on Twitter</a> (i build cool stuff) or checking out my other dumb projects:
+      <br />
+      <a href="https://myfirstnda.com">an non disclosure agreement legal service for middle schoolers</a> or <br />
+      <a href="https://chessengines.org">a guide on how to build a chess engine</a> or <br />
+      <a href="https://plagiarism.fyi">how to beat college code plagiarism detection algorithms</a>
+    </p>
   </body>
 </html>
