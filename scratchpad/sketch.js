@@ -4,7 +4,7 @@ let xoff = 0;
 
 function setup() {
   createCanvas(400, 400);
-  frameRate(30);
+  frameRate(2);
   noStroke();
 }
 
@@ -13,8 +13,8 @@ function draw() {
   for (let y = 0; y < height; y += rwidth) {
     for (let x = 0; x < height; x += rwidth) {
       let r = random(255);
-      let g = random(255);
-      let b = random(255);
+      let g = random(255) + x;
+      let b = x + y;
       fill(r, g, b);
       rect(x, y, rwidth, rwidth);
     }
